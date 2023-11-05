@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Roboto;
+    color: #0B3B3C;
+}
+a {
+    text-decoration: none;
+    color: #0B3B3C;
+}
+img {
+    width: 100%;
+}
+.button {
+    width: 20em;
+    padding: 15px 68px;
+    background-color: #7E0707;
+    color: white;
+}
+.title {
+    font-size:3em;
+    font-weight: 700;
+}
+.transparent {
+    background-color: transparent;
+    outline: solid 1px #7E0707;
+    color: #7E0707;
+}
+.header {
+    padding: 34px 0;
+    position: relative;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-block {
+    display: none;
+}
+.header-link {
+    padding: 0 28px;
+    text-transform: uppercase;
+}
+.logo {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.header-navigation {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    gap: 2em;
+    position: absolute;
+    top: 9em;
+    right: 0;
+    background-color: grey;
+    opacity: 0.7;
+    padding: 20px 0;
+}
+.header-navigation a {
+    color: white;
+}
+.toggle-button {
+    max-width: 50px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+}
+.show {
+    display: flex;
+}
+.get-started {
+    background-image: url(../img/started-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 33%;
+    
+}
+.started-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+.advatnages {
+    padding: 45px 0;
+}
+.advatnages .container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 50px;
+}
+
+.advantages-item img {
+    width: 3em;
+}
+
+.advantages-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.healthcare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0 1.5em 0;
+    text-align: center;
+    position: relative;
+}
+.rating {
+    max-width: 14em;
+}
+.rating span {
+    color: green;
+}
+.rating-image {
+    padding: 1.5em 0 1em 0;
+}
+.healthcare-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.healthcare-arrow {
+    display: none;
+}
+.treatments .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 4em 0;
+    text-align: center;
+}
+.treatments .title {
+    font-weight: 400;
+}
+.treatments-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.treatments-item {
+    max-width: 42em;
+    text-align: center;
+    background-color: #E8EFE9;
+    padding: 20px;
+}
+
+.treatments-item .title {
+    font-size: 1.5em;
+}
+.item-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: solid 2px #0B3B3C;
+}
+.manual-wellbeing {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8EFE9;
+}
+.mw-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 7em 2.5em;
+}
+.new {
+    max-width: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #BDCDC5;
+    padding: 5px;
+}
+.mw-services {
+    display: flex;
+    gap: 1.5em;
+}
+.ms-item {
+    display: flex;
+    gap: 1em;
+}
+.mw-services img {
+    max-width: 1em;
+}
+.mw-icons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    width: 100%;
+}
+.icons-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1.5em;
+    text-align: center;
+}
+
+@media all and (min-width:992px) {
+    .logo {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+    .header-navigation {
+        display: none;
+    }
+    .link-block {
+        display: flex;
+        align-items: center;
+    }
+    .toggle-button {
+        display: none;
+    }
+    .advatnages .container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .healthcare-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .healthcare-arrow {
+        display: block;
+    }
+    .healthcare-arrow:nth-child(2) {
+        align-self: flex-start;
+     }
+     .treatments-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+     }
+     .manual-wellbeing {
+        display: flex;
+        flex-direction: row;
+        background-color: #E8EFE9;
+    }
+    .mw-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 7em 2.5em;
+        width: 50%;
+    }
+    .mw-icons {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+        padding: 1em;
+        width: 50%;
+        padding: 5em 5em 5em 8em;
+    }
+}
