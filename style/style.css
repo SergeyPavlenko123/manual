@@ -18,6 +18,8 @@ img {
     padding: 15px 68px;
     background-color: #7E0707;
     color: white;
+    text-align: center;
+    text-transform: uppercase;
 }
 .title {
     font-size:3em;
@@ -164,9 +166,8 @@ img {
     text-transform: uppercase;
     border-bottom: solid 2px #0B3B3C;
 }
-.manual-wellbeing {
-    display: flex;
-    flex-direction: column;
+.manual-wellbeing  {
+
     background-color: #E8EFE9;
 }
 .mw-content{
@@ -185,20 +186,27 @@ img {
 .mw-services {
     display: flex;
     gap: 1.5em;
+    font-size: 0.5em;
 }
 .ms-item {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1em;
 }
-.mw-services img {
-    max-width: 1em;
+.ms-item div {
+    max-width: 2em;
+}
+.ms-item p {
+    margin-bottom: 0;
 }
 .mw-icons {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    gap: 20px;
+    gap: 10px;
     width: 100%;
+    padding: 2em 0;
 }
 .icons-item {
     display: flex;
@@ -206,10 +214,219 @@ img {
     gap: 1em;
     justify-content: center;
     background-color: #fff;
-    padding: 1.5em;
+    padding: 10px;
     text-align: center;
 }
+.director {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0 60px 0;
+}
+.director p:nth-child(2) {
+    font-weight: 700;
+}
+.director-icons {
+    display: flex;
+    gap: 10px;
+    max-width: 230px;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1em;
+    gap: 10px;
+}
 
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8em 6em;
+    background-color: #E8EFE9;
+    max-width: 31em;
+}
+.slider-item p {
+    font-weight: 700;
+}
+.slider-item p:not(:last-child) {
+    padding: 3em 0 8em 0;
+    font-weight: 400;
+}
+
+.stars {
+    display: flex;
+    max-width: 7em;
+}
+.our-team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5em;
+    padding: 2em 8em;
+}
+.team-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card {
+    text-align: start;
+}
+.card p:not(:first-of-type) {
+    color: #91AB9F;
+}
+.hr{
+    width: 100%;
+    border-bottom: solid 1px lightgrey;
+}
+.consultation .container {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    flex-wrap: wrap;
+    padding: 3em 1em 7em 1em;
+}
+.c-text p:not(:first-child) {
+    color: #91AB9F;
+}
+.c-content {
+    display:flex;
+    align-items: center;
+    gap: 1em;
+}
+.trustpilot {
+    color: white;
+}
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/Trustpilot.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15em 6em;
+}
+
+.text p:not(:first-child) {
+    text-transform: uppercase;
+}
+.trustpilot-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 3em;
+}
+.guided {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    gap: 2em;
+}
+.guided .title {
+    text-transform: uppercase;
+}
+.guided .text {
+    text-align: center;
+}
+.guided-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 0 1em;
+}
+.guided-cards .card {
+    border: none;
+}
+.card-body .item-link {
+    padding-top: 4em;
+}
+.card-text {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #0B3B3C;
+    padding:0 0 3em 0;
+}
+.gc-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.gc-content p {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.footer {
+    background-color: #0B3B3C;
+    padding: 3em 0;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.fc-item {
+    display: flex;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+.footer .title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em;
+}
+.footer .text,h4 {
+    color: #6D8A83;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16em;
+}
+.fl-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.fb-links {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
 @media all and (min-width:992px) {
     .logo {
         flex-grow: 1;
@@ -248,10 +465,9 @@ img {
         grid-template-rows: 1fr 1fr;
         gap: 5px;
      }
-     .manual-wellbeing {
+     .manual-wellbeing .container {
         display: flex;
         flex-direction: row;
-        background-color: #E8EFE9;
     }
     .mw-content{
         display: flex;
@@ -264,9 +480,21 @@ img {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(3,1fr);
-        gap: 20px;
-        padding: 1em;
+        gap: 10px;
+        padding: 10px;
         width: 50%;
-        padding: 5em 5em 5em 8em;
+        padding: 5em 5em 8em;
+    }
+    .slider {
+        flex-direction: row;
+        position: relative;
+    }
+    .team-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .guided-cards {
+       flex-direction: row;
     }
 }
